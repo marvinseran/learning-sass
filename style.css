@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: whitesmoke;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+.carte {
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+.carte:hover {
+  cursor: pointer;
+}
+.carte:hover .desc {
+  height: 260px;
+  bottom: 40px;
+  background: black;
+}
+.carte:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+.carte:hover img {
+  transform: scale(1.1);
+  filter: blur(4px);
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.desc {
+  height: 70px;
+  width: 500px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 42px;
+  background: rgba(27, 27, 27, 0.5);
+  color: white;
+  transition: 0.5s;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
